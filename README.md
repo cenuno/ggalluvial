@@ -26,6 +26,7 @@ The
 ```r
 devtools::install_github("corybrunson/ggalluvial", ref = "optimization")
 ```
+The [fittext branch](https://github.com/corybrunson/ggalluvial/tree/fittext) suggests the **ggfittext** package to fit text labels inside strata (see issue [#10](/../../issues/10)) and can be installed similarly. (This usage requires **ggfittext** `v0.5.0.9003`; once this functionality is on CRAN, this branch will be merged into `master`.)
 
 ## Usage
 

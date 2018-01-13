@@ -21,6 +21,15 @@ ggplot(vaccinations,
   stat_stratum(geom = "errorbar") +
   geom_text(stat = "stratum")
 
+# use in tandem with ggfittext
+ggplot(vaccinations,
+       aes(x = survey, stratum = response, alluvium = subject,
+           weight = freq,
+           fill = response, label = response)) +
+  geom_flow() +
+  geom_stratum(alpha = .5) +
+  ggfittext::geom_fit_text(stat = "stratum", angle = 90)
+
 # alluvium data: positioning with weight labels
 ggplot(as.data.frame(Titanic),
        aes(weight = Freq,

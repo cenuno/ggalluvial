@@ -190,7 +190,7 @@ ggplot(vaccinations,
            fill = response, label = response)) +
   geom_flow() +
   geom_stratum(alpha = .5) +
-  geom_text(stat = "stratum", size = 3) +
+  ggfittext::geom_fit_text(stat = "stratum", width = 1/3) +
   theme(legend.position = "none") +
   ggtitle("vaccination survey responses at three points in time")
 ```

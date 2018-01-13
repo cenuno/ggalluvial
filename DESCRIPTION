@@ -24,6 +24,7 @@ Imports:
 Suggests:
     grid,
     alluvial,
+    ggfittext,
     testthat,
     knitr,
     babynames

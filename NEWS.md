@@ -1,6 +1,6 @@
 # ggalluvial 0.5.0.9001
 
-
+- **ggfittext** is added under `Suggests` and its use is illustrated in the vignette and in a `stat_stratum()` example. _These uses require `v0.5.0.9003`, which is not yet on CRAN._
 
 # ggalluvial 0.5.0.9000
 
