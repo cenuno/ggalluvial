@@ -1,5 +1,6 @@
 # ggalluvial 0.5.0.9001
 
+- `GeomFlow$draw_panel()` now begins by removing `complete.cases()`, corresponding to one-sided flows. (These are not removed in `StatFlow$compute_panel()`, which would exclude missing aesthetic values from legends.)
 - **ggfittext** is added under `Suggests` and its use is illustrated in the vignette and in a `stat_stratum()` example. _These uses require `v0.5.0.9003`, which is not yet on CRAN._
 
 # ggalluvial 0.5.0.9000
